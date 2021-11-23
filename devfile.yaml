@@ -1,0 +1,12 @@
+schemaVersion: 2.0.0
+metadata:
+  name: test
+  version: 1.0.1
+  displayName: test
+  description: test
+components:
+  - name: test-runtime
+    container:
+      image: 554435723203.dkr.ecr.eu-west-1.amazonaws.com/test-gitpod:latest
+      mountSources: true
+      command: ['sleep', 'infinity']
