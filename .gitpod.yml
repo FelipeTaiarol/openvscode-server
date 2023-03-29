@@ -1,2 +1,4 @@
-image: felipetaiarol/test
-
+image: "public.ecr.aws/aws-mde/universal-image:latest"
+tasks:
+  - init: yarn install && yarn run compile
+    command: yarn run watch
